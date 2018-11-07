@@ -5,7 +5,7 @@ from sklearn.externals import joblib
 posFile = "./data/eval_food.txt"
 negFile = "./data/eval_notfood.txt"
 
-print("正在获取训练矩阵及其分类向量")
+print("正在得到测试矩阵及其分类向量")
 trainList,classVec = loadTrainDataset(posFile,negFile)
 
 nb = joblib.load("arguments/train_model.m")
