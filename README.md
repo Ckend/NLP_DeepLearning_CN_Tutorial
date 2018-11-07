@@ -25,4 +25,5 @@
 以3352条食品安全新闻和14946条非食品安全新闻为训练集
 测试600:600的新闻集，准确率为97.7%
 
+教程地址：https://huanxiangke.com/tutorials_dnn/naive_bayes_classify
     
