@@ -2,13 +2,9 @@
 
 从最基本的机器学习模型：朴素贝叶斯，介绍到双向神经网络BRNN.
 
-博客(幻象客)网址:
+博客(幻象客)网址:   https://huanxiangke.com
 
-https://huanxiangke.com
-
-模型应用于极致安食网:
-
-https://jizhianshi.com
+模型应用于极致安食网:   https://jizhianshi.com
 
 ## 1. 朴素贝叶斯分类器
 各个目录和文件介绍：
