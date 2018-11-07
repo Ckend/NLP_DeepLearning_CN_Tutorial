@@ -1,4 +1,4 @@
-# NLP_DeepLearning_CN_Tutorial
+# NLP深度学习 中文教程
 
 ## 1. 朴素贝叶斯分类器
 各个目录和文件介绍：
