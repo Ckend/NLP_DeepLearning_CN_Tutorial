@@ -105,16 +105,6 @@ class scikitNB:
         """
         self.model.fit(trainMatrix,classVector)
 
-
-    def classify_news(self, news):
-        """
-        分类函数,对输入新闻进行处理，然后分类
-        :param news: 欲分类的新闻
-        """
-        vector = vectorize_newslist([news],self.vocabulary)[0]
-        return self.classify_vector(vector[0])
-
-
     def classify_vector(self, vec2Classify):
         """
         FIXME:建议不要使用这个函数，统一使用上述
