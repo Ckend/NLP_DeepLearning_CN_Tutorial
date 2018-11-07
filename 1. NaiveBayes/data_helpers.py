@@ -27,7 +27,6 @@ def jieba_cut_and_save_file(inputList, output_cleaned_file=False):
     # 根据词典生成词向量化器,并进行词向量化
     setOfWords2Vec = setOfWords2VecFactory(vocabulary)
     vectorized = [setOfWords2Vec(news) for news in lines]
-
     return vectorized, vocabulary
 
 def loadTrainDataset(posFile,negFile):
@@ -76,7 +75,7 @@ def createVocabList(news_list):
         # |取并
     return list(vocabSet)
 
-def vectorize_newslist(news_list, vocabulary=None):
+def vectorize_newslist(news_list, vocabulary):
     """
     将新闻列表新闻向量化，变成词向量矩阵
     注：如果没有词典，默认值为从集合中创造
@@ -84,10 +83,6 @@ def vectorize_newslist(news_list, vocabulary=None):
     """
     # 分词与过滤
     cut_news_list = [list(jieba.cut(clean_str(news))) for news in news_list]
-
-    # 创造词典
-    if not vocabulary:
-        vocabulary = createVocabList(cut_news_list)
 
     # 根据词典生成词向量化器,并进行词向量化
     setOfWords2Vec = setOfWords2VecFactory(vocabulary)
