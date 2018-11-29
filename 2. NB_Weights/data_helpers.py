@@ -9,7 +9,6 @@ def jieba_cut_and_save_file(inputList, n_weight, a_weight, output_cleaned_file=F
     """
     1. 读取中文文件并分词句子
     2. 可以将分词后的结果保存到文件
-    3. 如果已经存在经过分词的数据文件则直接加载
     """
     output_file = os.path.join('./data/', 'cleaned_' + 'trainMatrix.txt')
     lines = []
@@ -23,12 +22,15 @@ def jieba_cut_and_save_file(inputList, n_weight, a_weight, output_cleaned_file=F
             if word != ' ':
                 # 若非空
                 a.append(word)
-                if flag.find('n')!=0:
+                if flag.find('n')==0:
                     # 若是名词
                     b.append(n_weight)
-                elif flag.find('a')!=0:
+                elif flag.find('a')==0:
                     # 若形容词
                     b.append(a_weight)
+                # elif flag.find('v')==0:
+                #     # 若名词
+                #     b.append(v_weight)
                 else:
                     b.append(1)
         lines.append(a)
