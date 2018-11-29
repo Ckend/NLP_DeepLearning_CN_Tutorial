@@ -32,3 +32,5 @@
 重点：修改了jieba_cut_and_save_file函数，增加了权重接口，可以照葫芦画瓢增加其他词性的权重。
 
 准确率为98.2%
+
+教程地址：https://huanxiangke.com/blog/post/weights-improved-naive-bayes
