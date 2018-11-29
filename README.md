@@ -26,4 +26,9 @@
 测试600:600的新闻集，准确率为97.7%
 
 教程地址：https://huanxiangke.com/tutorials_dnn/naive_bayes_classify
-    
+
+## 2. 改进朴素贝叶斯分类器
+
+重点：修改了jieba_cut_and_save_file函数，增加了权重接口，可以照葫芦画瓢增加其他词性的权重。
+
+准确率为98.2%
