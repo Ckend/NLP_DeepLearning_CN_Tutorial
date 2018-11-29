@@ -10,7 +10,7 @@ trainList,classVec = loadTrainDataset(posFile,negFile)
 print("正在将训练矩阵分词，并生成词表")
 n_weight = 3
 # 名词权重
-a_weight = 2
+a_weight = 1
 # 形容词权重
 vectorized, vocabulary = jieba_cut_and_save_file(trainList, n_weight, a_weight, True)
 bayes_ = bayes.oldNB(vocabulary)
